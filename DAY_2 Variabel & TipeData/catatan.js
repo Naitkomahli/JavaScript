@@ -1,20 +1,33 @@
-var nama = "Budi"; // Bisa  diubah, tapi tidak dipakai lagi
-let umur = 21; // Bisa diubah, lebih modern
-const PI = 3.14; // Tidak bisa diubah
+let nama = "John"; // Variabel yang bisa diubah
+const umur = 25;   // Variabel yang tidak bisa diubah
+var kota = "Jakarta"; // Cara lama (tidak disarankan)
 
-//Contoh
-let nama = "John"; // String
-let umur2 = 25; // Number
-let isStudent = true; // Boolean
-let alamat = null; // Null
-let pekerjaan; // Undefined
-let id = Symbol("id"); // Symbol
-let bigNumber = 1234567890123456789012345678901234567890n; // BigInt
+//Tipe Data
+//1. Number
+let angka = 10;
+let desimal = 10.5;
 
-let person = { nama: "John", umur: 25 }; // Object
-let numbers = [1, 2, 3]; // Array
-function greet() {
-  console.log("Hello!");
-} // Function
-let today = new Date(); // Date
-let regex = /ab+c/; // RegExp
+//2. String
+let kata = "Hello, World!";
+let nama2 = "John";
+
+//3. Boolean: true atau false
+let isBenar = true;
+let isSalah = false;
+
+//4. Null: nilai kosong
+let kosong = null;
+
+//5. Undefined: variabel yang belum diinisialisasi
+let tidakAda;
+console.log(tidakAda); // Output: undefined
+
+//6. Object: kumpulan data
+let orang = {
+  nama: "John",
+  umur: 25,
+  kota: "Jakarta"
+};
+
+//7. Array: kumpulan data yang terurut
+let buah = ["Apel", "Jeruk", "Mangga"];

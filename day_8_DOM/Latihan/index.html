@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example</title>
+</head>
+<body>
+    <p id="demo">Ini adalah paragraf.</p>
+    <div id="container"></div>
+    <button id="tombol">Klik Saya</button>
+    <p id="pesan"></p>
+
+    <script>
+        // Mengubah konten
+        let elemen = document.getElementById("demo");
+        elemen.innerHTML = "Konten telah diubah!";
+
+        // Menambahkan elemen baru
+        let container = document.getElementById("container");
+        let paragrafBaru = document.createElement("p");
+        paragrafBaru.innerHTML = "Ini adalah paragraf baru.";
+        container.appendChild(paragrafBaru);
+
+        // Mengubah gaya
+        elemen.style.color = "blue";
+        elemen.style.fontSize = "24px";
+
+        // Menanggapi event
+        let tombol = document.getElementById("tombol");
+        let pesan = document.getElementById("pesan");
+
+        tombol.addEventListener("click", function() {
+            pesan.innerHTML = "Tombol telah diklik!";
+        });
+    </script>
+</body>
+</html>

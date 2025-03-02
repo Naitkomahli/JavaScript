@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #daftar li {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tombol untuk mengubah warna latar belakang -->
+    <button id="ubahWarna">Ubah Warna Latar Belakang</button>
+
+    <!-- Input teks -->
+    <input type="text" id="inputTeks" placeholder="Ketik sesuatu...">
+    <p id="outputTeks"></p>
+
+    <!-- Daftar dengan event delegation -->
+    <ul id="daftar">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <script>
+        // 1. Mengubah warna latar belakang
+        let ubahWarna = document.getElementById("ubahWarna");
+        ubahWarna.addEventListener("click", function() {
+            document.body.style.backgroundColor = "lightblue";
+        });
+
+        // 2. Menampilkan nilai input teks
+        let inputTeks = document.getElementById("inputTeks");
+        let outputTeks = document.getElementById("outputTeks");
+
+        inputTeks.addEventListener("input", function() {
+            outputTeks.innerHTML = "Anda mengetik: " + inputTeks.value;
+        });
+
+        // 3. Event delegation untuk daftar
+        let daftar = document.getElementById("daftar");
+        daftar.addEventListener("click", function(event) {
+            if (event.target.tagName === "LI") {
+                alert("Anda mengklik: " + event.target.innerHTML);
+            }
+        });
+    </script>
+</body>
+</html>

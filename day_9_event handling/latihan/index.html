@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        #pesan {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Handling</h1>
+    <div id="catatan">
+        <p>Jenis-Jenis Event</p>
+        <p>Berikut adalah beberapa jenis event yang umum digunakan:</p>
+        <table>
+            <tr>
+                <th>Event</th>
+                <th>Deskripsi</th>
+            </tr>
+            <tr>
+                <td><code>click</code></td>
+                <td>Saat elemen diklik.</td>
+            </tr>
+            <tr>
+                <td><code>mouseover</code></td>
+                <td>Saat mouse berada di atas elemen.</td>
+            </tr>
+            <tr>
+                <td><code>mouseout</code></td>
+                <td>Saat mouse meninggalkan elemen.</td>
+            </tr>
+            <tr>
+                <td><code>input</code></td>
+                <td>Saat nilai input berubah (untuk <code>&lt;input&gt;</code>).</td>
+            </tr>
+            <tr>
+                <td><code>change</code></td>
+                <td>Saat nilai input berubah dan kehilangan fokus.</td>
+            </tr>
+            <tr>
+                <td><code>keydown</code></td>
+                <td>Saat tombol keyboard ditekan.</td>
+            </tr>
+            <tr>
+                <td><code>keyup</code></td>
+                <td>Saat tombol keyboard dilepas.</td>
+            </tr>
+            <tr>
+                <td><code>load</code></td>
+                <td>Saat halaman atau elemen selesai dimuat.</td>
+            </tr>
+            <tr>
+                <td><code>submit</code></td>
+                <td>Saat form di-submit.</td>
+            </tr>
+        </table>
+    </div>
+    <button id="tombol">Klik Saya</button>
+    <p id="pesan"></p>
+    <a id="link" href="https://www.google.com">Klik Link Ini</a>
+    <ul id="daftar">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
